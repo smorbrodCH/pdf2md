@@ -1,0 +1,15 @@
+[project]
+name = "pdf2md"
+version = "0.1.0"
+description = "Convert PDF documents to Markdown for LLM context (used by VoiceTutor)."
+readme = "README.md"
+license = "AGPL-3.0-only"
+requires-python = ">=3.10"
+dependencies = ["pymupdf4llm==1.28.2", "pymupdf==1.28.2"]
+
+[project.scripts]
+pdf2md = "pdf2md.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
